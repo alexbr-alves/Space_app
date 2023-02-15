@@ -19,7 +19,6 @@ import Netuno from '../../components/planetasAnimation/Netuno';
 import styles from './styles.js';
 
 
-import fundo from '../../../assets/bg.jpg'
 
 
 export default function Home() { 

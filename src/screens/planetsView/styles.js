@@ -3,25 +3,34 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create({
     container: {
         flex: 1, 
-        backgroundColor: "#032250"
+        backgroundColor: '#282a4b',
     },
     head_title: {
-        fontSize: 69, 
+        fontSize: 50, 
         color:'red',
-        marginTop: 20,
+        marginTop: 10,
         fontWeight: "400",
         color: '#FFFFFF',
         fontFamily: 'BebasNeue_400Regular',
         alignSelf: 'center'
     },
     head_image: {
-        marginTop: 73,
+        marginTop: 20,
         height: 250,
         width: 300,
         alignSelf: 'center'
     },
+    description:{
+        marginTop: 30,
+        marginHorizontal: 40
+    },
+    description_text:{
+        fontSize: 15,
+        color: '#bdbdbd',
+        fontStyle: 'italic'
+    },
     body: {
-        marginTop: 150,
+        marginTop: 50,
         flexDirection: 'row',
         marginLeft: 40,
         justifyContent: 'space-between',
@@ -49,7 +58,6 @@ export default StyleSheet.create({
         fontSize: 18,
         lineHeight: 22,
         fontFamily: 'BebasNeue_400Regular',
-        marginLeft: 20
     },
     body_distance:{
         fontSize: 24,
@@ -95,7 +103,9 @@ export default StyleSheet.create({
         marginTop: 20,
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: 15
+        borderRadius: 15,
+        bottom: 20,
+        position: 'absolute'
     },
     button_title: {
         fontFamily: 'BebasNeue_400Regular',
@@ -103,6 +113,13 @@ export default StyleSheet.create({
         lineHeight: 28,
         letterSpacing: 1,
         color: '#032250'
+    },
+    noSistemaSolar_text:{
+        fontSize: 18,
+        fontFamily: 'BebasNeue_400Regular',
+        color: 'white',
+        marginTop: 20
+       
     }
 
         

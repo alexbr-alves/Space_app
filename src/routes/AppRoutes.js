@@ -6,6 +6,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from '../screens/home/Home'
 import PlanetView from '../screens/planetsView/index'
 import View3D from '../screens/3dView';
+import Explorer from '../screens/explorer';
+import Galery from '../screens/galery';
 
 const Stack = createNativeStackNavigator();
 
@@ -13,6 +15,10 @@ export default function AppRoutes() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+      <Stack.Screen name="Explorer" component={Explorer} options={{
+            title: '',
+            headerShown: false
+            }}/>
         <Stack.Screen name="Home" component={Home} options={{
             title: '',
             headerShown: false
@@ -22,6 +28,10 @@ export default function AppRoutes() {
             headerShown: false
             }}/>
         <Stack.Screen name="View3D" component={View3D} options={{
+            title: '',
+            headerShown: false
+            }}/>
+        <Stack.Screen name="Galery" component={Galery} options={{
             title: '',
             headerShown: false
             }}/>
