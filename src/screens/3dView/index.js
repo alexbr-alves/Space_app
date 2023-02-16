@@ -1,16 +1,19 @@
-import { useRoute } from "@react-navigation/native";
+import { useNavigation, useRoute } from "@react-navigation/native";
 import React, { useState, useEffect } from "react";
-import Back from 'react-native-vector-icons/Ionicons'
+
 import {View, Text, TouchableOpacity } from "react-native";
 import WebView from "react-native-webview";
 
 
 import links from "../../Mocks/links";
+import Header from "./components/header";
 
 
-export default function View3D({ navigation: { goBack } }){
+export default function View3D(){
     const route = useRoute();
     const [planet3D, setPlanet3d] = useState();
+    const navigation = useNavigation();
+    const handleGoBack = () => navigation.goBack();
     useEffect(() => {
             if(route.params.id == "Mercury"){
               setPlanet3d(links.Mercurio)
@@ -34,14 +37,13 @@ export default function View3D({ navigation: { goBack } }){
 
 
     }, [route.params.id])
+
+    
     return (         
         <View style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}>
-        <TouchableOpacity onPress={() => goBack()} style={{backgroundColor: '#f3f3f7'}}>
-          <Back style={{ marginTop: 40, marginLeft: 20}} name="arrow-back" size={35} color={'#032250'} />
-        </TouchableOpacity>
-      
+        
+        <Header onBack={handleGoBack}/>
         <WebView
-          style={{flex: 1}}
           scrollEnabled={false}
           source={{ uri: planet3D }}
         />
@@ -49,3 +51,4 @@ export default function View3D({ navigation: { goBack } }){
       
     )
 }
+

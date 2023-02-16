@@ -27,5 +27,9 @@ export default StyleSheet.create({
     card_text: {
         fontFamily: 'BebasNeue_400Regular',
         fontSize: 20
-    }
+    },
+    iconeBack: { 
+        marginTop: 40, 
+        marginLeft: 20 
+    },
 })
