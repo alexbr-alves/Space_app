@@ -30,3 +30,13 @@
 
 
 <br>
+
+<h3>
+Aponte a camera nativa do seu smartphone com o aplicativo EXPO já instalado para o QR-Code.
+obs: Esta aplicação foi testada apenas com celular IOS. Portanto, não garanto que o aplicativo se comporte no celular Android da mesma forma 
+que se comporta com celular IOS.
+</h3>
+<br>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/103543739/219457371-c648ddf5-f2dc-4994-b574-9fb9860c4f4a.png">
+</p>
