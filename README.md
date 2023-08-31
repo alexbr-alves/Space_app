@@ -20,9 +20,7 @@
 <h2>VIDEO DEMOSTRATIVO</h2>
 <br>
 
-<p align="center">
-<video src="https://user-images.githubusercontent.com/103543739/219453009-2ff960ce-7226-4330-8d11-235f52bb6fe9.mp4">
-</p>
+https://user-images.githubusercontent.com/103543739/219453009-2ff960ce-7226-4330-8d11-235f52bb6fe9.mp4
 
 <h2>Demostrações complementares</h2>
 
